@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* --- Part 1: CSS Transitions & Animations --- */
+.fancy-btn {
+  padding: 10px 20px;
+  background: dodgerblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+.fancy-btn:hover {
+  background: darkblue;
+  transform: scale(1.1);
+}
+
+/* Keyframe animation */
+.animated-box {
+  width: 50px;
+  height: 50px;
+  background: coral;
+  margin: 20px 0;
+  animation: bounce 0.019s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+/* --- Part 3: Box controlled by JS --- */
+.js-box {
+  width: 80px;
+  height: 80px;
+  background: seagreen;
+  margin-top: 10px;
+}
+.animate {
+  animation: spin 1s linear;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
